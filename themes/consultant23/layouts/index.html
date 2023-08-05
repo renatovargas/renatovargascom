@@ -5,31 +5,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Renato Vargas | Las lecciones aprendidas de su organización son un activo</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://kit.fontawesome.com/e8a29d98ab.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!--Navbar js-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+
+    });
+  </script>
+  <!--End Navbar js-->
+
+
+
 </head>
 
 <body>
 
-   <!-- Start Navbar-->
+  <!-- Start Navbar-->
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://renatovargas.com">
+      <a class="navbar-item" href="/">
         <img src="../assets/img/renatovargas-logo.png" width="112" height="28">
       </a>
-  
+
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-  
-    <div id="navbarBasicExample" class="navbar-menu is-active">
+
+    <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-         
+
         <a class="navbar-item">
-          Proyectos
+          Servicios
         </a>
         <a class="navbar-item">
           Recursos
@@ -41,46 +69,273 @@
           En Vivo
         </a>
       </div>
-  
+
     </div>
   </nav>
   <!-- End Navbar-->
 
-  <section class="hero is-medium">
-    <div class="container">
+  <!--First Section - Intro Hero-->
+  <section class="hero is-info is-medium">
+    <!--section class="container"-->
     <div class="hero-body">
-      <p class="title">
-        Las lecciones aprendidas de su organización son un activo
-      </p>
-      <p class="subtitle">
-        Ayudo a organizaciones de clase mundial a convertir su investigación y soluciones a problemas en libros, audiolibros, reportes, charlas estructuradas, materiales de capacitación y contenido de redes sociales para persuadir clientes y diseminar ideas.
-      </p>
+      <div class="columns">
+
+        <div class="column is-two-thirds">
+          <p class="title">
+            Las lecciones aprendidas de su organización son un activo
+          </p>
+          <p class="subtitle">
+            Ayudo a organizaciones de clase mundial a convertir su investigación y soluciones a problemas en libros,
+            audiolibros, reportes, charlas estructuradas, materiales de capacitación y contenido de redes sociales
+            para
+            persuadir clientes y diseminar ideas.
+          </p>
+        </div>
+        <div class="column">
+
+          <!--Start card-->
+          <div class="card">
+            <div class="card-content">
+              
+              <div class="card-image has-text-centered">
+                <figure class="image is-128x128 is-inline-block">
+                    <img class="is-rounded" src="/assets/img/renato-vargas.jpg"/>
+                </figure>
+            </div>
+                  <p class="has-text-centered">Agendemos una llamada sin compromiso para determinar si mis servicios son compatibles con sus
+                    necesidades. Contácteme vía:</p>
+                 
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+
+                <a href="https://wa.me/50233654263" target="_blank"><button class="button is-success"><i
+                      class="fa fa-whatsapp fa-fw" aria-hidden="true"></i>WhatsApp
+                  </button></a>
+              </p>
+              <p class="card-footer-item">
+                <a href="https://www.linkedin.com/in/revargas/" target="_blank"><button class="button is-info"><i
+                      class="fa fa-linkedin fa-fw" aria-hidden="true"></i>LinkedIn
+                  </button></a>
+              </p>
+            </footer>
+          </div>
+          <!--End Card-->
+        </div>
+
+      </div>
     </div>
-  </div>
+  </section>
+  <!--End First Section - Intro Hero-->
+
+  <!--Second Section - Articulación del problema-->
+  <section class="section">
+    <!--section class="container"-->
+    <div class="columns">
+
+      <div class="column">
+
+        <!--Tiles-->
+        <div class="tile is-ancestor">
+          <div class="tile is-vertical is-parent">
+            <div class="tile is-child notification is-danger">
+              <p class="subtitle">Problema</p>
+              <p>Los clientes y actores no reconocen nuestra experiencia y autoridad en el sector.</p>
+            </div>
+            <div class="tile is-child notification is-success">
+              <p class="subtitle">Problema</p>
+              <p>No tenemos material para presentar en la convención.</p>
+            </div>
+          </div>
+          <div class="tile is-vertical is-parent">
+            <div class="tile is-child notification is-info">
+              <p class="subtitle">Problema</p>
+              <p>Los nuevos empleados no entienden lo que hace nuestra organización.</p>
+            </div>
+            <div class="tile is-child notification is-warning">
+              <p class="subtitle">Problema</p>
+              <p>Los asesores externos nos están diciendo algo que uno de nuestros equipos ya había resuelto.</p>
+            </div>
+          </div>
+
+        </div>
+        <!--End Tiles-->
+
+      </div>
+
+
+      <div class="column is-three-fifths">
+
+        <p class="title">
+          Su organización merece ser reconocida por su experiencia
+        </p>
+        <br>
+        <p class="subtitle">
+          <strong>El prestigio institucional, profesional y comercial se construye documentando formalmente las
+            acciones positivas y el conocimiento desarrollado por la organización.</strong>
+        </p>
+        <p>
+          Muchos de los procesos exitosos dentro de las organizaciones permanecen ocultos al resto de colaboradores
+          de la
+          institución, los clientes, los aliados institucionales y comerciales, los tomadores de decisiones y otros
+          actores,
+          porque se quedan perdidos en reuniones, correos y presentaciones. Esto hace que se desperdicie tiempo y
+          esfuerzo
+          en repetir procesos para problemas ya resueltos.
+        </p>
+        <br>
+        <p class="subtitle"><strong>Lo quiera o no, su organización, empresa o proyecto ya cuenta con una
+            reputación.</strong></p>
+        <p>Convertir su conocimiento en contenido
+          permite solidificar de manera intencional el prestigio, la marca y la reputación institucional de manera que
+          refleje la visión de la organización y contribuya a alcanzar las metas institucionales y comerciales.
+        </p>
+      </div>
+
+    </div>
   </section>
 
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        Método
-      </div>
-      <div class="column">
-        Vídeo
+  <!--End First Section - Intro Hero-->
+
+  <section class="hero is-info">
+    <div class="hero-body">
+      <p class="title is-5 has-text-centered">He desarrollado investigaciones para organizaciones como:</p>
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p class="title is-5">Banco Mundial*</p>
+          </div>
+          <div class="column">
+            <p class="title is-5">CEPAL*</p>
+          </div>
+          <div class="column">
+            <p class="title is-5">BID*</p>
+          </div>
+          <div class="column">
+            <p class="title is-5">FAO*</p>
+          </div>
+          <div class="column">
+            <p class="title is-5">USAID*</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <p class="subtitle is-6 has-text-right">* Clientes, no denota afiliación.</p>
 
-<!--Start Footer-->
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Renato Vargas.</strong> Sígueme en <a href="https://www.linkedin.com/in/revargas/">LinkedIn</a> y suscríbete a mi newsletter en donde comparto ideas útiles para una comunidad de consultores profesionales, analistas de datos y creadores profesionales de contenido técnico.
-    </p>
-  </div>
-</footer>
-<!--End Footer-->
+  <!--Section: Método-->
+  <section class="section">
+    <!--section class="container"-->
+    <div class="columns">
+
+      <div class="column is-one-fifth">
+
+        <p class="title is-5">
+          Una combinación comprobada de experiencia y métodos basados en ciencia
+        </p>
+        <p>
+          Una metodología comprobada modular me permite atender distintas fases del proceso de generación de
+          conocimiento institucional de manera científica y limitada a la parte del proceso en la que necesite apoyo.
+        </p>
+        <p>
+          Coordinar alianzas con profesionales de varias disciplinas me permite ir más allá de mi formación para proveer 
+          servicios de calidad en todas las fases.
+        </p>
+      </div>
+
+
+      <div class="column">
+
+        <!--Tiles-->
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <div class="tile is-child notification is-warning">
+              <p class="title is-5">Planificación</p>
+              <p>Esta fase se enfoca en proveer una sólida base teórica de acuerdo al estado del arte del tema en
+                cuestión y en crear sistemas de indicadores, bases de datos e instrumentos de recolección de datos y
+                seguimiento que provean a todo el proceso de una espina dorsal de información confiable.</p>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child notification is-success">
+              <p class="title is-5">Evaluación</p>
+              <p>En esta fase se utiliza metodologías de análisis cuantitativo y cualitativo para determinar los
+                impactos de las acciones institucionales y la generación de conocimiento estructurado. Esta fase se
+                caracteriza por el uso de lenguajes de programación analítica como R, Python, Stata, GAMS, sistemas de información geográfica y
+                automatización de procesos analíticos.</p>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+            <div class="tile is-child notification is-warning">
+              <p class="title is-5">Documentación</p>
+              <p>Esta fase se centra en la creación de elementos de propiedad intelectual de alto valor, utilizando
+                elementos generados en las fases anteriores. Los ejemplos más representativos son los <strong>libros y
+                  reportes insignia</strong>, los cuales proveen a la organización con un elemento de validación de su
+                conocimiento especial. Estos elementos son productos en si mismos.</p>
+            </div>
+          </div>
+
+          <div class="tile is-parent">
+
+            <div class="tile is-child notification is-success">
+              <div class="content">
+                <p class="title is-5">Aprendizaje</p>
+                <p>En esta fase se genera:</p>
+                <ul>
+                  <li>Materiales didácticos: capacitaciones, libros de trabajo, presentaciones, clases virtuales,
+                    vídeos, etc.</li>
+                  <li>Charlas estructuradas (TED, keynotes, etc.).</li>
+                  <li>Contenido editorial para documentales, revistas, etc.</li>
+                  <li>Contenido para redes sociales (LinkedIn, Instagram, TikTok, etc.)</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <!--End Tiles-->
+
+    </div>
+    <section class="hero is-medium is-info">
+      <div class="hero-body">
+
+        <p class="subtitle has-text-centered">Con más de 15 años de experiencia creando contenido científicamente
+          validado para organizaciones internacionales puedo ayudarle a crear activos de propiedad intelectual para
+          persuadir a actores políticos y clientes sobre los beneficios de determinados cursos de acción, productos o
+          servicios, influyendo la opinión pública y forjando el prestigio institucional de su organización al mismo
+          tiempo.</p>
+      </div>
+    </section>
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+  <!--End método-->
+
+
+  <!--Start Footer-->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Renato Vargas.</strong> Únete a mi red en <a href="https://www.linkedin.com/in/revargas/"
+          target="_blank">LinkedIn</a> en donde comparto contenido para consultores profesionales,
+        analistas de datos y creadores profesionales de contenido técnico.
+      </p>
+    </div>
+  </footer>
+  <!--End Footer-->
 
 </body>
 
